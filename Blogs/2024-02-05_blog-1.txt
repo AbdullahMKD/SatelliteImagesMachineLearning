@@ -1,0 +1,42 @@
+Author: abd15
+Blog Week: 1 (05/02/24)
+
+Actions this Week
+=================
+
+Action 1: Read research papers to come up with ideas on how to implement the Project.
+
+Read through Several Research papers and came up with the Machine learning techniques
+RF: Random forest,
+CAST: Decion Tree Based Approach,
+SVM approach,
+Unsupervised Clustering approach Probabaly K-means
+ 
+All can be Employed in either Object Based or Pixel Based Image Classification
+Pixel based Classification will probably be best in our use case as It is less intensive on the system and more accurate and requires less training 
+then the object based image classification
+
+Action 2: Arrive on ROIs (regions of interest)
+
+I belive 3 ROIs will be suffice for the Report: 
+A large Metropolitan Area (Lahore), 
+A Small Town in an Agrarian Area (Aberystwyth?), 
+A Large area where no one lives except in the outskirts (Could be a Forest or desert or Mountainous Terrain)
+
+Action 3: Data Sources
+
+There are a lot of Data sources:
+Satalite Data directly: Particularly Sentinal 2a from the Copernicus Data Space Ecosystem or any other Satalite (Landsat 8, landsat 5, etc...)
+Universal Maps Downloader: Tool that allows you to download images to your specifications from Google Maps and Various other online maps
+Screenshots from Google maps: Seems unprofessional?
+
+=================
+Question. Google Earth Engine API for python can I use it as it has built in Classifiers for RF, CAST, SVM, and K-Means clustering as well as others?
+=================
+Actions for next week
+
+Find Implementations for Classifiers
+Work on Project Overview
+Work on project Timeline
+Start Prototyping
+Finalize and Get Data Sources
