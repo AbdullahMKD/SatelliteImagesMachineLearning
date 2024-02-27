@@ -1,0 +1,24 @@
+Author: abd15
+Blog Week: 4 (27/02/24)
+
+Actions these Weeks
+=================
+
+Action 1: Read Research Papers
+
+Just read research papers
+
+Action 2: Edit Pictures
+
+I have started to edit the images to the required size for each ROI
+
+Action 3: Did Python research
+
+I researched the Libraries Required to complete the program Specifically related to the GUI libraries (QTpy,Tkinker,pygame)needed for the program
+
+=================
+Actions for next week:
+=================
+Start Prototyping
+Make training Data set
+Read more Research Papers
