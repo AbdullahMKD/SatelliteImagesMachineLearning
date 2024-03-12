@@ -1,0 +1,33 @@
+Author: abd15
+Blog Week: 5&6 (13/03/24)
+
+Actions these Weeks
+=================
+
+Action 1: Continued research about Python libraries
+
+Did research about which python libraries were needed for the project
+OpenCV, tensorflow, and Scikitlearn are the major ones
+
+Action 2: Changed one set of images
+
+I have started to edit the images to the required size for each ROI
+
+Action 3: Set up Annaconda Enviroments
+
+Troubleshooted Annaconda enviroments and had to switch to ubuntu to remedy the issuses
+
+Action 4: Mid demo presentation
+
+Worked on the mid demo presentation and finished it
+
+Action 5: Data Set Creation
+
+Started codeing the Data set creation code 
+
+=================
+Actions for next week:
+=================
+Continue programing the training Data set
+Start Implementing Learning Models
+Read more Research Papers
