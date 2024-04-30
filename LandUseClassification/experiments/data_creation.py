@@ -11,7 +11,6 @@ image_paths = ['../Data/Lahore_2023-05-03-00_00_2023-06-03-23_59_Sentinel'
 print(len(image_paths))
 
 
-# Function to preprocess image
 def preprocess_image(img):
     img = cv2.imread(img, cv2.IMREAD_COLOR)
     if img is None:
