@@ -19,6 +19,8 @@ class kMeans_processing:
         self.centers = kmeans.cluster_centers_
         self.clustered_labels = kmeans.labels_
         self.clustered_img = self.clustered_labels.reshape(647, 993)
+        mapping = self.get_mapping()
+        self.clustered_img = self.apply_mapping_to_labels(mapping)
         return self.clustered_img
 
     def get_mapping(self):

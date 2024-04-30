@@ -106,8 +106,6 @@ class main_window:
         fig = Figure(figsize=(5 * cols, 4 * rows), dpi=100)
         for index, path in enumerate(self.file_paths):
             self.cluster_imgs.append(self.km_processor.clustering(k, self.img_processor.process_data(path)))
-            mapping = self.km_processor.get_mapping()
-            self.cluster_imgs[-1] = self.km_processor.apply_mapping_to_labels(mapping)
             print("clustering done for: {}".format(path))
             metrics = {'Inertia': self.km_processor.get_inertia(),
                        'Silhouette score': self.km_processor.get_silhouette_score()}
