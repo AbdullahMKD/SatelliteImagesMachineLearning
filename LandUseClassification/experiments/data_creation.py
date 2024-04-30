@@ -10,6 +10,7 @@ image_paths = ['../Data/Lahore_2023-05-03-00_00_2023-06-03-23_59_Sentinel'
                "../Data/Al-Dhannah_2022-05-20-00_00_2022-06-20-23_59_Sentinel-2_L2A_True_color.jpg"]
 print(len(image_paths))
 
+
 # Function to preprocess image
 def preprocess_image(img):
     img = cv2.imread(img, cv2.IMREAD_COLOR)
@@ -49,7 +50,7 @@ if len(all_pixel_data) % 3 != 0:
     raise ValueError("Total pixel data is not properly aligned to represent RGB values.")
 
 
-reshaped_pixel_data = np.reshape(all_pixel_data,(-1, 3))
+reshaped_pixel_data = np.reshape(all_pixel_data, (-1, 3))
 df = pd.DataFrame(reshaped_pixel_data, columns=['Pixel_R', 'Pixel_G', 'Pixel_B'])
 print(df)
 
