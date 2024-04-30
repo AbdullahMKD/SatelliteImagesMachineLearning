@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  23 APR 2024 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  1 MAY 2024 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**mmp-report
+**mmp-report bibtex mmp-report pdflatex mmp-report pdflatex mmp-report
 (./mmp-report.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -664,13 +664,13 @@ Here is how much of TeX's memory you used:
  34682 multiletter control sequences out of 15000+600000
  590515 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,93p,368b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,11n,93p,426b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
 /texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on mmp-report.pdf (15 pages, 106372 bytes).
+Output written on mmp-report.pdf (15 pages, 106405 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams
