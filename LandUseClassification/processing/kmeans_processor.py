@@ -8,12 +8,14 @@ class kMeans_processing:
         self.clustered_img = None
         self.clustered_labels = None
         self.inertia = None
+        self.DBI = None
         self.silhouette_score = None
         self.centers = None
 
     def clustering(self, n_clusters, data):
         kmeans = KMeans(n_clusters=n_clusters, n_init=10, random_state=76)
         kmeans.fit(data)
+        self.DBI = metrics.davies_bouldin_score(data, kmeans.labels_)
         self.inertia = kmeans.inertia_
         self.silhouette_score = metrics.silhouette_score(data, kmeans.labels_, metric='euclidean', sample_size=10000)
         self.centers = kmeans.cluster_centers_
@@ -34,6 +36,9 @@ class kMeans_processing:
 
     def get_silhouette_score(self):
         return self.silhouette_score
+
+    def get_dbi(self):
+        return self.DBI
 
     def get_inertia(self):
         return self.inertia

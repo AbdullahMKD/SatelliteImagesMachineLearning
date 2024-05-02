@@ -108,7 +108,8 @@ class main_window:
             self.cluster_imgs.append(self.km_processor.clustering(k, self.img_processor.process_data(path)))
             print("clustering done for: {}".format(path))
             metrics = {'Inertia': self.km_processor.get_inertia(),
-                       'Silhouette score': self.km_processor.get_silhouette_score()}
+                       'Silhouette score': self.km_processor.get_silhouette_score(),
+                       'Davies-Bouldin score': self.km_processor.get_dbi()}
             plot = fig.add_subplot(rows, cols, index + 1)
             plot.imshow(self.cluster_imgs[-1], cmap="viridis", vmin=0, vmax=k-1)
             plot.set_title(f"Image {index + 1}")
