@@ -9,7 +9,6 @@ setup(
         'matplotlib',
         'Pillow',
         'scikit-learn',
-        'sklearn',
         'tkinter',
         'cv2',
         'math',
