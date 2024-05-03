@@ -1,58 +1,71 @@
-# Satellite Imagery Land use Classification Using Machine Learning
+LandUseClassification
+Description
 
+LandUseClassification is a GUI application for satellite image classification using K-means clustering. This tool is designed to assist in the analysis and visualization of land use based on satellite imagery data, leveraging machine learning techniques for accurate classification.
+Installation
 
-## Add your files
+To install LandUseClassification, you'll need to have Python installed on your machine. Follow these steps to get started:
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+    Clone the repository:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.aber.ac.uk/abd15/area-based-land-use-classification-from-satellite-images.git
-git branch -M master
-git push -uf origin master
-```
+    bash
 
-## Suggestions for a good README
+git clone https://github.com/yourusername/LandUseClassification.git
+cd LandUseClassification
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Install required packages:
 
-## Name
-Choose a self-explaining name for your project.
+bash
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+pip install -r requirements.txt
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Run the application:
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+bash
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+    run_landuse_classifier
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Alternatively, if the package is structured properly with a setup.py, you can also install it directly using pip:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+bash
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+pip install .
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Features
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+    K-means Clustering: Utilize sophisticated machine learning algorithms to classify satellite images.
+    Graphical User Interface: Easy to use interface for interacting with the tool and visualizing results.
+    Scalable: Designed to handle large sets of satellite images efficiently.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Usage
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+After installation, you can start the application by executing the command line utility:
 
-## License
-For open source projects, say how it is licensed.
+bash
 
-## Project status
+run_landuse_classifier
+
+Follow the GUI prompts to load your satellite images and begin classification.
+Contributing
+
+Contributions to LandUseClassification are welcome! Please read the CONTRIBUTING.md file for guidelines on how to contribute effectively.
+Authors
+
+    Abdullah Durrani - Initial work - abd15@aber.ac.uk
+
+License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+Keywords
+
+image processing, clustering, k-means, gui application, machine learning, satellite image classification
+Contact
+
+If you have any questions, please email abd15@aber.ac.uk.
+Notes:
+
+    GitHub Repository URL: You'll need to replace "https://github.com/yourusername/LandUseClassification.git" with the actual URL of your GitHub repository.
+    License: The template assumes an MIT license, so if you're using another license, adjust accordingly.
+    Contribution Guidelines: I mentioned a CONTRIBUTING.md file, which you should provide in your repository with contribution guidelines.
+    Installation Instructions: The installation steps assume you have a requirements.txt file. If not, list the dependencies manually as per your setup.py.
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
