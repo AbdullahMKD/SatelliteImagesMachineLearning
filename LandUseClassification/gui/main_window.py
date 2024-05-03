@@ -62,7 +62,6 @@ class main_window:
         for label in self.image_labels:
             label.destroy()
         self.image_labels.clear()
-
         file_paths = filedialog.askopenfilenames(title="Select images",
                                                  filetypes=[("JPEG files", "*.jpg"), ("All files", "*.*")])
         self.file_paths = file_paths
