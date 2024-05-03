@@ -1,2 +1,96 @@
-\chapter{Testing}
+\chapter{Critical Evaluation}\label{ch:critical-evaluation}
+
+
+\section{Methodology}\label{sec:methodolody}
+
+The methodology
+adopted for the project was primarily based on feature-driven development with certain elements incorporated from the waterfall methodology,
+but then later removed.
+Originally, the project was envisioned to follow a waterfall approach which is categorised by a sequential linear process of software development.
+However, it was determined that the rigid structure of the waterfall methodology was not ideally suited for this project, particularly because it has to be undertaken by a solo developer.
+This is the decision to shift towards feature driven development was made to leverage its flexibility and efficiency\cite{softwareTesting2022}, which are better suited for managing complex evolving projects by a single developer fdd focuses on delivering tangible working software repeatedly and in a timely manner.
+This approach breaks down the project into manageable chunks of work centred around individual features,
+making it more adaptable to changing requirements and easier to handle independently
+
+\section{Technologies}\label{sec:technologies}
+
+The development environment selected for this project was anaconda 3.
+Which offers several significant advantages for deploying applications across various operating systems anaconda 3.
+Supports compatibility with both Windows and Linux, which broadens the potential user base by ensuring that the project can operate on the most widely used platform.
+There are some key advantages to using anaconda3.
+Cross-platform compatibility which was already covered.
+Rich library support for machine learning is another big one.
+Anaconda is renowned for its comprehensive suite of machine learning libraries that are readily available and easy to install libraries such as sci-fi, scikit-learn and tensorflow.
+There's also the ease of library management anaconda simplifies the process of library management with its conda package manager conda allows for the easy installation, updating and management of libraries and dependencies.
+However, there were still issues with anaconda 3.
+Specifically, related to setting up environments which were a bit challenging for someone new to anaconda 3 as there was a previous environment already available for this project.
+However, the library would not install any of the specific packages needed for this project at that time.
+Also, there were some libraries are very resource intensive, specifically tensorflow which was going to be used in this project.
+However, it was having difficulty running on my machine so it had to be discarded.
+
+\section{Requirements}\label{sec:requirements}
+
+The objective of this project was to create a application that can take satellite imagery and use a machine learning algorithm on it and
+classify the land use and be able to tell you the differences between
+different times of that same land using the land uses that it has classified this objective was Matt and completed.
+However it could have been done better with more options for the user, not just gay clustering you could have had different classifiers and the ability to train your own classifiers kind of like weka in a
+way but all features that were put on the feature list have been implemented in this project some issues did occur such as the an ability for tensorflow to work properly on my machine is one of them.
+Another is the late final implementation of the program.
+It could have been implemented way sooner,
+but because of certain circumstances the program was implemented a lot later and so is a lot more rough looking than it needed to be
+
+\section{Design}\label{sec:design}
+
+The design of the system was effectively implemented and functions well. 
+However, there is potential for enhancement through integration of alternative technologies that could significantly refine and improve the overall architecture and user interface.
+While many features of the system were developed based on thorough research, some aspects could have benefited from further exploration or a different methodological approach. 
+Potential areas of improvement were the GUI, time management and even more machine learning algorithms could have been used.
+Supervised methods could have been used if there was a way to find annotated data which exists,
+but there was not enough time to find this data for supervised machine learning classifiers.
+On the topic of the GUI that was used was Tkinter, but the GUI planned to be used was qtpy.
+But because of time constraints because the implementation of the program was done later than needed to have been done, we had to stick with TKinter so overall, the current system design is robust and meets the outline recommendations embracing alternative technologies, however, could have improved it a lot allowing for more options for the user and an overall better looking finished application.
+
+
+\section{implementation}\label{sec:implementation}
+
+The implementation of project features generally aligns well with the original design, maintaining functionality and performance.
+Although minor, non-recurring bugs have been identified, they do not significantly disrupt the overall operation.
+Most challenges stemmed from hardware constraints, particularly involving TensorFlow for image processing.
+The initial plan to use TensorFlow was eventually abandoned in favor of unsupervised learning methods,
+which circumvented the hardware limitations and allowed smooth implementation of most features without significant issues
+
+
+\section{Testing}\label{sec:testing}
+
+This section identifies an area for significant improvement in the current development phase, the scope and depth of testing procedures.
+While core functionality is like the image processor and decay means processors were successfully tested.
+A broader testing strategy is necessary to ensure the overall quality and robustness of the project time constraints limited the ability to perform manual testing beyond core functionalities and the main window interface.
+To address this.
+The following recommendations are suggested for future projects.
+Developing a comprehensive test plan, prioritise testing, leverage automation tools, and allocate sufficient resources to testing by implementing these recommendations.
+Hopefully there will be a better job next time to be able to do a better job of testing
+
+
+\section{Future work}\label{sec:future-work}
+
+Should the project be extended, numerous enhancements could be considered to augment its capabilities significantly.
+Potential upgrades include advanced training options for classifiers which would enhance their accuracy and efficiency.
+Improvements to the user interface could be made to facilitate more interactive data exploration such as enhanced zoom capabilities for plots and images, thereby improving user engagement and analytical precision.
+Further, the integration of more powerful classifiers would allow for deeper insights and more robust data handling\cite{k-textFabian2022}, specifically expanding the machine learning capabilities to include processing of teeth images and analysis of individual bands
+from satellite imagery could enable more detailed and specialized analysis compared to the current limitations of working with compiled jpegs.
+This could significantly enhance the application utility in fields requiring high-fidelity image analysis such as environment monitoring and geographic information systems
+
+
+\section{Conclusion}\label{sec:conclusion}
+
+In conclusion, the project was successfully completed.
+Despite the challenges posed by stringent timelines and certain managerial issues,
+the compressed schedule significantly constrained the scope of extensive testing, which is a critical phase in any project development life cycle.
+Nonetheless, the technical execution was handled competently reflecting a deep understanding of the project's goals and methodologies.
+I particularly valued the collaborative experience with my supervisor Tossapon Boongoen, whose guidance was instrumental in refining the design and helping me overcome obstacles as they arose.
+His encouragement was pivotal in encouraging my performance fostering a conductive learning environment.
+Throughout this project,
+I gained significant experience with agile methodologies, especially feature driven development FDD\@.
+This experience has not only enriched my professional skills,
+but also prepared me to integrate these methodologies into future projects more effectively
 

@@ -1,2 +1,222 @@
-\chapter{Implementation}
+\chapter{Design and Implementation}\label{ch:design-and-implementation}
+
+As we are following the Feature Driven Development methodology
+which was discussed in section~\ref{subsec:feature-driven-development-(fdd)-overview} the Design,
+Implementation, and Testing Chapters of the report have been merged
+For each iteration of the Project a section has been created to report on the progress made for each iteration
+
+\section{ Iteration 0}\label{sec:iteration-0}
+
+This iteration was spent researching and creating a design prototype as well as figuring out the feature list of the
+application.
+This iteration was also spent researching where to collect data
+
+\subsection{Initial Design}\label{subsec:initial-design}
+
+The initial design of the Satellite Image Classification System was conceived to provide a robust,
+user-friendly platform
+for the analysis and classification of satellite imagery using machine learning techniques.
+The design focused on creating a modular, scalable,
+and intuitive application that could be easily adapted to meet the diverse needs
+of users ranging from environmental scientists to urban planners.
+
+The Initial design would be object orientated, and did not currently have a specific Machine learning Model in mind for
+the application there wer 4 different models in line for the spot Random Forrest, CAST(Decision tree), CNNs and K-means clustering
+Initially the Criteria for Model selection was Performance, Scalability and Accuracy.
+
+Below is an initial Architecture for what
+the Program should have been able to do it consists of 3 Layers A User interface Layer,
+Data processing layer and a machine learning Layer
+
+\begin{itemize}
+    \item \textbf{User interface Layer}
+    \item  \begin{itemize}
+               \item \textbf{Functionality}
+               \textit{The UI layer, provides the primary interaction point for users.
+               It handles tasks like loading images, initiating the classification process, displaying results, and enabling
+               comparative analysis of images.}
+               \item \textbf{Technology}
+               \textit{It utilizes the Tkinter library, a standard GUI toolkit in Python, which supports building desktop applications
+               with graphical elements like buttons, canvases, and dialog boxes.}
+            \end{itemize}
+    \item \textbf{Data Processing Layer}
+    \item  \begin{itemize}
+               \item \textbf{Functionality}
+               \textit{This layer, is responsible for preparing the image data for analysis.
+               This includes preprocessing tasks such as resizing, and normalizing the pixel data of the image,
+                   and making sure the images are in the optimal format for clustering.}
+               \item \textbf{Output}
+               \textit{It outputs the Image as Usable data for the machine Learning layer}
+           \end{itemize}
+    \item \textbf{Machine Learning layer}
+    \item   \begin{itemize}
+               \item \textbf{Functionality}
+               \textit{he core analytical capabilities of the system are handled by the machine learnning algorithm to the processed image data,
+                   classifing  the images into distinct land uses based on their features.}
+               \item \textbf{Features}
+               \textit{It calculates key metrics after classification testing for accuracy, and classifier Performance}
+            \end{itemize}
+\end{itemize}
+
+
+\subsection{Use case Diagram}\label{subsec:use-case-diagram}
+
+The use case diagram provided in Figure\ref{fig:5} offers a visual representation of the interactions between the user and the Satellite Image Classification System.
+It outlines the key functionalities and flow of operations within the system,
+highlighting how users engage with the software to achieve their objectives
+
+\subsection{Activity Diagram}\label{subsec:activity-diagram}
+
+This activity diagram provided in figure\ref{fig:6}shows how the user will interact with the program and what the program should be doing depending on what the user does
+
+
+\subsection{Data Collection}\label{subsec:data-collection}
+
+Data for the Project was collected is collected from rom the Copernicus web browser, a part of the Copernicus Earth Observation Program.
+This program provides a comprehensive suite of satellite data encompassing a wide range of environmental and security applications,
+making it an invaluable resource for our system.
+Specifically, we took data From the Sentinel 2a satellite.
+We chose JPG over the TIFF and PNG because of three main reasons:
+
+\begin{itemize}
+    \item \textbf{Accessibility}
+    \textit{Jpg is one of the most common image formats on the internet, it's highly compatible and support across various platforms and devices. 
+    This makes JPG an ideal choice for ensuring that the application is accessible to a broad audience }
+    \item \textbf{Ease of use}
+    \textit{By using Jpg, the system simplifies the user experience, as most users are already familiar with handling and viewing JPG files.
+    This familiarity eliminates potential barriers to entry}
+    \item \textbf{Memory Constraints}
+    \textit{ PG images offer the advantage of compression, which reduces file sizes significantly.
+    This compression enables more efficient storage and faster transmission of images,
+        which is particularly beneficial when dealing with large datasets typical in satellite imagery}
+\end{itemize}
+
+\subsection{Feature List}\label{subsec:feature-list}
+
+A feature List \ref{tab:1} for the required features in the Land Use Classification application.
+the features are designed to provide a comprehensive toolset for users, ensuring not only the functionality to process and classify
+images but also to manage resources effectively
+
+
+\section{Iteration 2}\label{sec:iteration-2}
+
+During the second iteration of developing the land use classifier project,
+the primary focus was on implementing the crucial image loading functionality.
+This feature enables users to upload their satellite imagery into the system,
+setting the stage for subsequent processing and analysis of the image
+
+\subsection{Development phase}\label{subsec:development-phase}
+
+during the development phase of iteration 2, We developed image processing functions using the pillow and open CV libraries.
+These libraries provided the necessary tools for checking image integrity and performing necessary transformations such as format,
+conversion and resizing useful for machine learning applications
+
+we did a series of \ref{tab:2}tests which succeeded all of them except one,
+Which was a semi-fail because The corrupted image in the test was not detected by the program
+but it was also not used by the program and when the program you tried to use it,
+the program did not crash but sent an internal error so it was a semi-fail
+After implementing the image loader for the project.
+
+\section{Iteration 3}\label{sec:iteration-3}
+
+During the third iteration of the program, the primary focus was on getting the next two features from the feature list up and running.
+These were the image viewer and the classification configure settings.
+Both of these culminated in The creation of the main window class.
+This was the main way for the user to interact with the program from this main window.
+They could view the images, load their own images onto the program.
+enter k for the K-means classifier which we had chosen by this point to be the classifier that we would develop next.
+and pressing the start classification button which didn't really do anything at this point it was just more for show
+
+\subsection{Development Phase}\label{subsec:development-phase2}
+
+Integration of key features: image viewer development purpose was to allow users to visually inspect and manage the satellite images they uploaded functionality.
+The image viewer was designed to display images within the application Interface.
+The Classification configuration settings purpose was to provide users with the ability to configure the parameters
+for the k-means clustering algorithm which was selected as the classification technique.
+users could enter the number of clusters for the k means algorithm.
+The setting is crucial for turning the classification process to meet the specific needs of the user,
+such as distinguishing between different types of geographical features or land uses.
+The main window class now acts as a central hub for user interactions.
+Within the applications design, the main window class was developed to integrate various functionalities,
+including image loading, viewing and configuration settings into a single, coherent interface.
+This design approach ensures that users have a centralised and intuitive interface from which they can control all major aspects of the application
+
+
+\section{Iteration 4}\label{sec:iteration-4}
+
+Iteration 4 of the land use classification system marked a pivotal development phase, introducing the core ImageProcessor and KProcessor classes.
+The ImageProcessor class handles initial image manipulations, resizing images for uniformity, flattening them into arrays, normalizing data,
+and reshaping these into 3D arrays suitable for clustering.
+These pre-processed images are then passed to the KProcessor class,
+which applies K-means clustering, calculates key metrics like silhouette score, inertia, and Davies-Bouldin Index (DBI),
+and performs cluster remapping to ensure color consistency across visual outputs.
+This remapping involves sorting the indices of cluster centers by the sum of their coordinates and creating a new,
+orderly mapping from original to sorted indices.
+This sophisticated data processing and clustering functionality,
+integrated back into the main window class,
+significantly enhances the system’s ability to provide robust image classification and analysis,
+making this iteration a substantial leap forward in the system's development.
+
+Manual Testing on this Iteration was done in \ref{ch:experimentation}
+
+\subsection{the Development Phase}\label{subsec:development-phase3}
+
+Iteration 4 marked, a significant advancement in the development of the land use classifier system with the introduction of the km processing class and the image processor class.
+This phase represented the core of the project functionality where the primary processing and clustering operations were implemented.
+Overview of new classes and functionalities:
+The image processor class's purpose is to prepare the raw satellite images for clustering by performing a series of pre-processing steps.
+like image resizing the image to ensure uniformity across all images.
+It Flattens the image and normalizes the values of the image.
+Reshapes the flattened array into a 3D array appropriate for the clustering process.
+The km processing class purpose handles the clustering of pre-processed image data using the k means algorithm and calculates relevant clustering metrics.
+Functionality: The k means algorithm applies clustering to segment the image data into a specified number of clusters.
+metric calculation computes key performance metrics like silhouette score, inertia and the Davies bolden index or DBI to assess the quality of the clustering cluster.
+Remapping adjust the labelling of clusters to ensure consistency in colour mapping across different plots.
+Enhancing the visual coherence of cluster representations and is important for the last feature which is difference maps
+The processed data, along with the clustering results and metrics, are then passed back to the Main Window class.
+This integration allows users to interact dynamically with the processed images, view clustering results,
+and analyze the performance metrics directly through a user-friendly interface.
+
+
+
+
+\section{Iteration 5}\label{sec:iteration-5}
+
+Iteration 5 of the land use classification focused on the development of the display results page a used the clusters
+that had been taken from the km processing object and used matplotlib to clot the cluster.
+Be it singular or plural with the metrics that had been calculated for that specific plot,
+so that would be the silhouette score inertia and Davies Bowden index
+
+
+
+\subsection{the Development Phase}\label{subsec:development-phase4}
+
+iteration 5 of the land use classifier system was centred around the development of the display results page which plays a crucial role in visualising the outcomes of the land use classification process this phase leveraged the class clustering data processed by the km processing class from the previous iterations utilising the popular python library matplotlib to create
+informative and interactive visualisations of the clustered satellite images, key features and functionalities developed cluster visualisation.
+The system now integrates functionality to display the clustered images directly on the results page when showing a single cluster or multiple clusters.
+The visualisations are designed to be clear and distinguishable enhancing the user's ability to interpret the data integration of matrix alongside the visual representations key clustering metrics such as the silhouette score inertia and Davies Bowden index are displayed.
+These metrics are crucial for assessing the quality and effectiveness of the clustering providing users with quantitative basis to evaluate the segmentation results.
+
+Although Iteration 5 was more focused and compact compared to other phases, its contributions were pivotal for the overall project.
+It set the stage perfectly for the final iteration, enabling a seamless completion of the program.
+This iteration not only refined critical elements but also ensured that the foundation was robust,
+allowing the subsequent development phase to proceed without any major obstacles and culminate successfully.
+
+
+\section{Interation 6}\label{sec:interation-6}
+
+Iteration 6 of the land use classifier system was focused on the development of the difference map creater.
+A difference map is a plot that is the difference between two other plots.
+The way you calculate a difference map is that it's the absolute value of the difference of two maps.
+So what that gives us is an inverse of the two maps which highlights the differences between the two maps this is useful as you can see the differences between the same location at different times this gives the user the ability to look for differences in land use over time.
+
+The purpose of the difference map creator is that it is designed to highlight variations between two geographical images of the same location captured at different times.
+By identifying these changes, users can effectively monitor and analyse alterations in land use environmental shifts or development progress over time.
+It is also particularly valuable for users such as environmental planners, conservationists, and urban developers who need to keep track of changes in land use, vegetation cover urban expansion or environmental degradation.
+It provides a clear visual representative representation of changes enhancing decision-making by providing concrete data on how areas have evolved
+
+
+
+
+
 

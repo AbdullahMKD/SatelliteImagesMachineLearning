@@ -1,8 +1,242 @@
-\chapter{Background \& Objectives}
+\chapter{Background \& Objectives}\label{ch:background-&-objectives}
 
 
-\section{Background}
+\section{Introduction}\label{sec:introduction}
 
-\section{Analysis}
+In the world of Satellite Imagery analysis, the tools needed to provide robust and efficient classification and unlock the
+full potential of satellite imagery across various disciplines such as environmental monitoring, disaster response and
+urban planning is crucial.
+This project was initiated by recognizing this need for an application that leverages machine learning to simplify and enhance the classification of
+satellite imagery
 
-\section{Process}
+The Selection of the K-means clustering algorithm for this task was for several reasons.
+Its simplicity, effectiveness, and arguably the most important that it is unsupervised as opposed to the CAST (Decision trees),
+Random forrest and Artificial Neural Network approaches which are supervised learning methods.
+The K-means classifier allows the segmentation of large datasets of satellite imagery into meaningful clusters based on Pixel similarity.
+This approach helps in categorizing Land use and Specifically in detecting changes over time in regard to land use as we will see.
+
+\section{Background}\label{sec:background}
+
+The main idea of this project centers on the advanced utilization of satellite imagery for practical real world issues\cite{urbanEcology2022}.
+Satellite imagery provides a view of the earth's surface that most individuals don't usually look at, it provides critical data for environmental monitoring,
+urban development, strategic planning, land use control, security issues, and many more useful and important applications.
+The application of machine learning algorithms to satellite imagery enhances the ability to categorize and analyze the data more efficiently
+and in a less time-consuming way.
+
+\subsection{Problem Overview}\label{subsec:problem-overview}
+
+The increase in satellite imagery presents both an opportunity and a challenge.
+With satellites continuously orbiting and capturing visuals of earth's surface, there exists a vast collection of images
+that contain data which can enhance the decision taken in certain fields across multiple sectors.
+However, the volume of this data makes it difficult to process and analyze efficiently with conventional methods.
+Which may be inaccurate and or incredibly slow and can be influenced to ignore certain information based on biases and or pressure
+to complete the work on time.
+This can cause issues for time-sensitive matters such as environmental changes, disaster response and or Urgent urban developmental needs.
+
+Thus, the problem requires advanced tools that can handle the large amount of data taken from satellite imagery and convert it
+into usable insights swiftly and accurately.
+Traditional Image processing methods often fall short in managing the spatial and spectral diversity found in satellite imagery.
+Other Machine Learning Methods, specifically those most used for land use classification, require to be trained on data which takes time to collect and
+is expensive to store depending on how much data is collected.
+Not to mention, the training itself will take time that you might not have in an Emergency situation\cite{ahadflooddtec2022}, and the model will be only as good as the training data
+used to train it.
+
+Because of these Issues, The development of an application that uses unsupervised algorithms for satellite imagery classification
+addresses these challenges.
+By using an unsupervised approach to classification, it saves time on training and allows the user to segment the image by clusters which represent
+different land uses and makes it easier to see difference over time in land use in the area.
+It aims to enhance the accessibility and utility of satellite imagery.
+making it actionable for experts and informative for the layman.
+
+\subsection{Problem analysis}\label{subsec:problem-analysis}
+
+To address the issues of satellite imagery analysis, A solution must include several key features.
+these features would aim to ensure that the system not only meets the immediate needs of various users but also
+adapt to evolving technological changes.
+These include the following:
+
+\begin{itemize}
+    \item \textbf{Real-Time Processing:}
+    \textit{ The ability to process data and analyze it swiftly is crucial. Developing systems that offer near realtime processing capabilities ensure actionable insights when }
+    \item \textbf{sufficient in time and cost }
+    \textit{Should be quick and easily used on standard computer hardware. It should minimize setup times and make
+    efficient use of hardware resources to ensure cost-effectiveness and accessibility to a broader range of users}
+    \item \textbf{Accessibility and Usability:}
+    \textit{Should be able to be used and be understood by experts and laymen. this means a Simple-to-use user interface with
+    simple to understand Image Analysis that is actionable to the users specific needs}
+    \item \textbf{Accuracy:}
+    \textit{The program needs to be accurate to a certain degree to be actionable.To achieve it needs to be able
+    to give metrics on its performance after completion so that the user can make informed decisions about the results}
+    \item \textbf{Difference Map:}
+    \textit{The program should be able to compare the area to a previous version of the area and to tell the user visually how much change has occurred}
+    \item \textbf{Unsupervised Machine learning Method:}
+    \textit{The program should use an unsupervised machine learning method}
+    \item \textbf{Continuous Improvement and Learning:}
+    \textit{Since this field is ever evolving the system must be designed for easy maintenance and updates. The code should be clear and well-documented,
+        facilitating the integration of new features and the adaptation of the system to incorporate the latest research findings and technological improvements.}
+\end{itemize}
+
+\section{ Project Analysis}\label{sec:project-analysis}
+
+This project aims to develop a sophisticated tool for analyzing satellite imagery, leveraging the capabilities of unsupervised machine learning technologies.
+Opting for an unsupervised machine learning approach provides significant advantages over supervised methods,
+particularly in scenarios where labeled data is scarce or costly to obtain.
+
+Supervised methods require extensive labeled datasets for training, which can be both time-consuming and expensive to prepare,
+especially for complex image datasets like satellite imagery.
+In contrast, unsupervised machine learning automates the analysis without the need for labeled data,
+significantly enhancing speed and reducing costs.
+By integrating advanced unsupervised algorithms, the system can process vast amounts of imagery data,
+identifying inherent patterns and changes more quickly and accurately than supervised methods.
+
+This automation not only accelerates the analytical process but also reduces reliance on potentially biased or inconsistent manual labeling.
+Furthermore, unsupervised systems can continuously adapt and improve as they are exposed to new data,
+learning from the inherent structure and variations without the need for continuous retraining with new labeled data.
+
+Moreover, leveraging unsupervised machine learning reduces the overhead associated with maintaining and updating large labeled datasets,
+offering a unified approach that can be easily scaled and adapted to various needs without significant modifications.
+This adaptability is crucial for dynamic applications like environmental monitoring and urban planning\cite{dynamicMonitoring2022}, where conditions can
+evolve rapidly and unpredictably.
+
+Ultimately, this scalability and cost-effectiveness make advanced satellite image analysis more accessible to a broader range
+of users, from experts to laymen in related fields, enhancing the potential impact of the technology across multiple sectors.
+
+\subsection{Supervised vs. Unsupervised}\label{subsec:supervised-vs.-unsupervised}
+
+As stated in the previous few sections, an unsupervised approach would be better than a supervised approach for this project
+here is why:
+
+\begin{itemize}
+    \item \textbf{Elimination of Labeling Requirements:}
+    \textit{ One of the most significant challenges with supervised learning is the necessity for labeled datasets, which are used to train the models.
+    Labeling satellite images can be labor-intensive and costly, requiring expert knowledge and a considerable amount of time.
+    An unsupervised approach, however, does not require labeled data.
+    It automatically detects patterns and anomalies in the data based on the inherent characteristics of the images, such as pixel values and textures.}
+    \item \textbf{Adaptability to New Data:}
+    \textit{Satellite imagery is continuously evolving due to changes on the Earth's surface and differences in data acquisition techniques.
+    Supervised models often need retraining or fine-tuning when new types of data are introduced, which can be a cumbersome and resource-intensive process.
+    Unsupervised learning methods are inherently more flexible, adapting to new patterns and changes in the data without the need for retraining.
+    This adaptability makes unsupervised learning particularly suitable for the dynamic nature of satellite imagery, }
+    \item \textbf{Scalability and Cost-Effectiveness:}
+    \textit{Handling the vast amounts of data generated by satellite technologies can be more scalable under an unsupervised framework.
+    Since there is no need to label new data, continually}
+    \item \textbf{Discovery of Unknown Patterns, }
+    \textit{Unsupervised learning is particularly adept at identifying patterns and clusters that were not previously anticipated.
+    In satellite imagery, this capability is crucial as it can reveal unexpected changes or new phenomena that a supervised model,
+        trained on previously known labels, might overlook.}
+    \item \textbf{Reduced Bias and Greater Objectivity:}
+    \textit{Since Unsupervised Learning does not rely on Labels it is not susceptible to biases that might appear in the training dataset of a Supervised learning method}
+\end{itemize}
+
+All of these factors played a role in why the Project uses an unsupervised machine learning algorithm, specifically the previously mentioned K-means clustering
+algorithm.
+As it not only optimizes resource utilization but also enhances the analytical capabilities of the system.
+
+\subsection{Choice of Machine learning Algorithm}\label{subsec:choice-of-machine-learning-algorithm}
+
+In selecting The appropriate machine learning algorithm for the classification of satellite imagery in our project,
+the K-means clustering algorithm from the sklearn library was chosen due to its specific characteristics that align well with the
+requirements of the project, Specifically:
+
+\begin{itemize}
+    \item \textbf{Simplicity:}
+    \textit{K-means is one of the simplest clustering algorithms to implement and understand. it's computationally efficient as well
+    especially when dealing with large datasets, like those typically generated by satallite imagery.}
+    \item \textbf{ Good metrics for calculating Accuracy of the Clusters:}
+    \textit{Silhouette Score, Davies Bouldin Index, and Inertia provide valuable insights into the clustering performance, but they measure different aspects.
+    The Silhouette Score assesses how appropriately data points have been grouped compared to other clusters -1 being it's in the
+    wrong cluster and 1 being this is definitely the correct cluster, which reflects separation and cohesion,
+        while Inertia focuses on the compactness of the clusters. A high number is not very compact meaning the cluster is not very uniform
+        and a lower number meaning it's a compact cluster. Employing both metrics together allows for balancing cluster
+        quality through Inertia and relevance through the Silhouette Score, facilitating more accurate and reliable cluster analysis.
+        Additionally, the Davies-Bouldin Index (DBI) enhances this evaluation by measuring the ratio of intra-cluster distances to inter-cluster distances.
+        A lower DBI value indicates better clustering as it signifies that the clusters are both compact and well-separated from each other.
+        Integrating DBI into the assessment provides a comprehensive view of cluster validity, For the Specific image.}
+    \item \textbf{Well-defined Clusters}
+    \textit{K-means works best with well seperated data and can produce very tight clusters which are very useful in our project when we need to delineate
+    different types of land use from each other}
+    \item \textbf{Robustness and consistency:}
+    \textit{K-means often produces consistent results, making it reliable for repeat analyzes under similar conditions.
+    This predictability is valuable in applications requiring repeated deployment, like monitoring changes in environmental landscapes over time through satellite images.}
+\end{itemize}
+
+
+
+\subsection{Primary Objective}\label{subsec:primary-objective}
+
+The primary objective of the project is to develop an advanced application capable of efficiently processing and
+analyzing satellite imagery using a machine learning algorithm.
+This tool aims to transform satellite data into actionable insights swiftly and accurately, enhancing decision-making
+in various sectors.
+By utilizing machine learning techniques the application seeks to outperform non-machine learning techniques by offering greater precision and faster
+processing times, thereby providing rapid and cost-effective image analysis.
+This will make satellite imagery more accessible and useful to both experts and laymen, helping them to understand
+and react to changes in the landscape efficiently and effectively for the users specific uses.
+
+
+
+\section{Process}\label{sec:process}
+
+\subsection{Methodology}\label{subsec:methodology}
+
+In the course of this project, Multiple Methodologies were considered, particularly agile methodologies.
+Like Scrum, Extreme Programming, and Kanban, as well as plan driven ones like the Waterfall approach.
+In the beginning of the project, the idea was to go for a plan driven Waterfall method.
+
+Overtime however, FDD or Feature Driven Development was fully chosen as the methodology for its specific advantages in
+managing software development projects through iterative and incremental progress, Unlike the Waterfall method which for a solo
+developer puts too much strain in the beginning on rigid planning, making problems later on when designs or features have
+to change for unspecified reasons.
+
+\subsection{Feature Driven Development (FDD) Overview}\label{subsec:feature-driven-development-(fdd)-overview}
+
+Feature Driven Development is a client-centric, architecture driven and pragmatic software development Methodology.
+Its main focus is to deliver working software in a timely manner consistently.
+FDD is usually used in a collaborative setting.
+However, even as this was a solo project, it was straightforward to adapt it to being a
+ single developer scenario unlike waterfall which is much less able to be adapted to a solo methodology
+
+FDD compartmentalizes the planning into Features/functions of a whole overall model of the program which serves as a blueprint of the program.
+Each feature is then given a priority in the plan, and in each iteration of the Program you plan design and code that feature and then move on to the next.
+and by the time you finish, you have a fully implemented completely working program ready for the user to use and enjoy.
+
+\subsection{Development environment, Libraries, and Programing language}\label{subsec:development-enviroment-libraries-and-programing-language}
+
+For this project, it was fully developed in the anaconda development environment.
+As it ensures that the program will be Cross platform, has a wide array of machine learning and non-machine learning libraries
+which were essential for this project such as
+
+\begin{itemize}
+    \item \textbf{numpy: 1.23.5}
+    \item \textbf{matplotlib: 3.80}
+    \item \textbf{scikit-Learn: 1.30}
+    \item \textbf{cv2: 4.60}
+    \item \textbf{Pillow: 10.2.0}
+    \item \textbf{tk: 8.6.12}
+    \item \textbf{math}
+\end{itemize}
+
+It was also used as it supports python 3.11.5, which is the version of python this program was developed on.
+Plus, there was already prior experience for this environment as it was used for a previous python module.
+Although a new Fresh anaconda environment was created for this project instead of the old one being reused.
+
+\subsection{Version Control System}\label{subsec:version-control-system}
+
+For this project, GitHub was used as the version control system.
+As GitHub is widely recognized for its robust functionality in managing changes to code, collaborating on a project, storing code securely
+ over time, Documentation support, and Integration with other tools.
+Such tools as The IDE Pycharm on which this program was developed
+
+\subsection{Documentation of diagrams}\label{subsec:documentation-of-diagrams}
+The simple UML diagrams used in this report have been created using plantUML scripts from  \cite{planttext.com} and the line graphs
+were generated using code
+
+
+
+
+
+
+
+
+
+

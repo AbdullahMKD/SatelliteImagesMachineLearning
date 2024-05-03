@@ -1,2 +1,158 @@
-\chapter{Design}
+\chapter{Experimentation}\label{ch:experimentation}
+
+
+\section{K-Means clustering}\label{sec:k-means-clustering}
+
+This section is about how the Kmeans clustering algorithm works mathematically.
+As it is important that we learn how the Classifier functions so that we can understand how Clustering occurs,
+what the processes are, and how we can manipulate it to get the best possible results.
+The steps are as follows:
+
+\begin{itemize}
+    \item \textbf{Initialization:}
+    \textit{The first step in k means clustering involves selecting K initial centroids, where k is the number of clusters
+    you want to identify in the dataset.
+    The centroids can be randomly selected from the datapoints, or you can provide a heuristic or specific strategy
+    on which they are chosen to enhance the quality and or speed of convergence.}
+    \item \textbf{ Assignment step}
+    \textit{In this step each data point in the dataset is assigned to the nearest centroid.
+    the nearest is determined by the euclidian distance between the data point and the centroid this is mathematically determined by
+    \[
+        C_i = \{ x_p : \|x_p - m_i\| \leq \|x_p - m_j\| \, \forall j, 1 \leq j \leq k \}
+    \]}
+    \textit{where $C_i$ is the set of data points assigned to cluster $i$, $x_p$ is a data point, and $m_i$ is the centroid
+    of cluster $i$. This means each data point $x_p$ is assigned to cluster $i$ if the distance from $x_p$ to $m_i$ is the smallest
+    among all centroids.}
+    \item \textbf{Update Step}
+    \textit{Once all data points have been assigned to clusters, the centroids need to be recalculated.
+    This is done by taking the mean of all points assigned to each cluster—the position of the centroid of each cluster is updated
+    to the mean position of all points belonging to that cluster. The formula for updating the centroid of each cluster is:
+    \[
+        m_i = \frac{1}{|C_i|} \sum_{x \in C_i} x
+    \]}
+    \textit{where $|C_i|$ is the number of data points in cluster $i$, and $\sum_{x \in C_i}$ is the sum of all data points
+    in cluste $i$}
+    \item \textbf{Iteration}
+    \textit{ In this step steps 2 and 3 are repeqted iterativly until the centroilds stop moving significantly, this means
+    that the cluster is now stabilized and the algorithm has converged, the number of iterations has been spent. This allows
+    the cluster assignmenst and centeroid positions to reflect the data accurately.}
+    \item \textbf{Convergence}
+    \textit{The algorithm has converged when the centroids have stabilized and or alternatively when the assignment of points to clusters
+    longer change }
+\end{itemize}
+
+\section{Metrics Used}\label{sec:metrics-used}
+
+When Employing Clustering algorithms such as K-means, assessing the quality of the algorithm is important as it validates
+the effectiveness of the analysis.
+Because of this, I use three crucial metrics to evaluate the K-means algorithm Silhouette score, Inertia and DBI(Davies-Bouldin Index)
+
+\subsection{Silhouette Score}\label{subsec:silhouette-score}
+
+The Silhouette Score is a measure of how similar an object is to its own cluster compared to other clusters.
+The score is calculated for each data point and can range from -1 to +1, where a high value indicates that the object is
+well-matched to its own cluster and poorly matched to neighboring clusters
+Mathematically its definition is:
+\[
+    s(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}
+\]
+    $a(i)$ is the mean distance between $i$ and all other data points in the same cluster.
+
+    This measures how well it $i$ is assigned to its cluster (the smaller, the better).
+
+    $b(i)$ is the minimum mean distance from ii to all points in any other cluster, of which $i$ is not a member.
+
+    This measures how poorly $i$ is matched to its neighboring cluster (the larger, the better).
+
+The overall Silhouette Score for the dataset is the mean Silhouette Score of all individual points.
+    This score provides a succinct measurement of how appropriately the data has been clustered.
+
+\subsection{Inertia}\label{subsec:inertia}
+
+Inertia, also known as the within-cluster sum of squares, measures the compactness of the clusters, which ideally should be as small as possible .
+It is calculated by summing the squared distances between each data point and its nearest centroid.
+Mathematically its definition is:
+\[
+   W(C) = \sum_{i=1}^k \sum_{x \in C_i} \|x - \mu_i\|^2
+\]
+
+
+
+$C_i$ is the set of all points in cluster $i$,
+
+$mu_i$ is the centeroid of cluster $i$
+
+Outer Sum: $\sum{i = 1}^k$ iterates over each cluster from 1 to $k$.
+
+Inner Sum: $\sum{x \in C_i}$ sums over all points $x$ within each cluster $C_i$.
+
+$ \|x - \mu_i\|^2$ computes the squared Euclidean distance between a point $x$ and the cluster centroid $mu_i$,
+which is the norm squared of the vector difference.
+
+$k$ is the number of clusters
+
+\subsection{Davies-Bouldin Index (DBI)}\label{subsec:davies-bouldin-index-(dbi)}
+
+The DBI is Defined as the Average similarity measure of each cluster with its most similar cluster, where similarity is the ration of within cluster distances
+to between cluster differences.
+The Goal is to minimize the DBI, as a lower DBI score indicates a better clustering division.
+It has no dependency on the Shape or Density of the Cluster, It is easy to compute, and it is a Simple interpretation as it directly
+quantifies the trade-off between the compactness of clusters and their separation.
+The Mathematical definition for it is:
+\[
+    DBI = \frac{1}{k} \sum_{i=1}^k \max_{i \neq j} R(i,j)
+\]
+where $k$ is the number of clusters, and $R(i,j)$ is the similarity measure between clusters $i$ and $j$ where $R(i,j)$
+is defined as $R(i,j) = \frac{s_i+s_i}{d_{ij}}$
+
+$s_i$ is the average distance to all points in cluster $i$ to the centroid of cluster $i$ (intra-cluster distance)
+
+$d_{ij}$ is the distance between the centroids of clusters $i$ and $j$ (inter-cluster distance)
+
+$s_j$ is similarly the average intra-cluster distance for cluster $j$.
+
+\section{Analysis of Clustering Metrics: Determining the Optimal Number of Clusters for the Al Dhannah Dataset}\label{sec:analysis-of-clustering-metrics:-determining-the-optimal-number-of-clusters-for-the-al-dhannah-dataset}
+
+The selection of the optimal number of clusters (k) in K-means clustering is crucial for achieving the best possible grouping of data points.
+We can analyze this by reviewing graphs of the Average Inertia for Different k, Average Silhouette Scores for Different k,
+and a combined plot of Silhouette Score vs.Inertia so that we can find the best K for the Al Dhannah City dataset as each
+dataset will have a different best K\@.
+
+\subsection{Average Inertia for different K}\label{subsec:average-inertia-for-different-k}
+
+
+
+As illustrated in Figure\ref{fig:1}, As we can see from the Graph, there is a sharp decline in inertia as the number of Clusters increases from 2 to around 5 followed
+by a more gradual decrease.
+The Lower the Inertia value, the more Compact the Clusters meaning higher quality clusters.
+
+We can apply the elbow rule here which states that the optimal K is where the inertia curve begins to flatten in this graph the
+curve begins to flatten around K=4.
+this suggests that increasing the number of clusters beyond this point results in Diminishing results
+
+
+\subsection{Averge Silhouette Scores for Different K}\label{subsec:averge-silhouette-scores-for-different-k}
+
+
+
+As illustrated in Figure\ref{fig:2}, The Average Silhouette Score graph presents a different perspective, highlighting the average silhouette score of clusters as k varies.
+The silhouette score measures how similar an object is to its own cluster compared to other clusters, with higher values generally indicating more appropriate clustering.
+
+The graph shows the highest silhouette score at k=2, which then declines steadily as more clusters are added.
+This indicates that at k=2, the clusters are more distinct and well-separated compared to higher values of k.
+
+\subsection{Silhouette Score vs. Inertia}\label{subsec:silhouette-score-vs.-inertia}
+
+
+
+As illustrated in Figure\ref{fig:3}, The combined graph Plots these scores against each other for the value of k this visual representation helps us see the
+trade-off between Inertia and the Silhouette score.
+If K is high in this dataset, inertia is low, so K = 2 is too much in favor of the Silhouette Score, the Clusters are separate, but the
+clusters are not as dense as they should be.
+K = 4, on the other hand, is perfect as The silhouette Score is not as good as K = 3 and the inertia is not as good as K = 5.
+
+Using insights from Both previous graphs.
+We can determine that K = 4 is the most balanced choice for the Current Dataset as
+it provides a compromise between having distinct clusters and ensuring that the clusters are compact enough\cite{studentResults2022}.
+This is suggested by the elbow in the inertia graph and relatively good silhouette scores for K = 4 in the silhouette score graph.
 

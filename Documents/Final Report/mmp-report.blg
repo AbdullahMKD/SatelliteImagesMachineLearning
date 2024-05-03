@@ -9,9 +9,9 @@ A level-1 auxiliary file: Chapters_Engineering/chapter1.aux
 A level-1 auxiliary file: Chapters_Engineering/chapter2.aux
 A level-1 auxiliary file: Chapters_Engineering/chapter3.aux
 A level-1 auxiliary file: Chapters_Engineering/chapter4.aux
-A level-1 auxiliary file: Chapters_Engineering/chapter5.aux
 The style file: StylesAndReferences/IEEEannotU.bst
 A level-1 auxiliary file: Appendices/appendixA.aux
+A level-1 auxiliary file: Appendices/appendixB.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -22,46 +22,59 @@ Database file #1: StylesAndReferences/references.bib
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
+Warning--empty author in ahadflooddtec2022
+Warning--empty author and editor in dynamicMonitoring2022
+Warning--empty journal in planttext.com
+Warning--empty year in planttext.com
+Warning--empty author in k-textFabian2022
+Warning--empty journal in vijayalakshmi2022performance
+Warning--empty author in mlrasha2023
+Warning--empty journal in coperni
+Warning--empty year in coperni
+Warning--empty author in semanticManami2019
+Warning--empty journal in semanticManami2019
+Warning--empty author in unevenClusters2022
 
 Done.
-You've used 8 entries,
+You've used 17 entries,
             4068 wiz_defined-function locations,
-            877 strings with 9272 characters,
-and the built_in function-call counts, 4581 in all, are:
-= -- 361
-> -- 78
-< -- 27
-+ -- 44
-- -- 13
-* -- 192
-:= -- 736
-add.period$ -- 17
-call.type$ -- 8
-change.case$ -- 10
-chr.to.int$ -- 69
-cite$ -- 8
-duplicate$ -- 346
-empty$ -- 413
-format.name$ -- 16
-if$ -- 1029
+            914 strings with 10549 characters,
+and the built_in function-call counts, 11045 in all, are:
+= -- 909
+> -- 186
+< -- 102
++ -- 122
+- -- 31
+* -- 538
+:= -- 1705
+add.period$ -- 34
+call.type$ -- 17
+change.case$ -- 16
+chr.to.int$ -- 222
+cite$ -- 29
+duplicate$ -- 824
+empty$ -- 859
+format.name$ -- 31
+if$ -- 2508
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 65
-newline$ -- 52
-num.names$ -- 8
-pop$ -- 165
+int.to.str$ -- 17
+missing$ -- 124
+newline$ -- 92
+num.names$ -- 11
+pop$ -- 273
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 361
+skip$ -- 880
 stack$ -- 0
-substring$ -- 174
-swap$ -- 251
-text.length$ -- 4
+substring$ -- 566
+swap$ -- 661
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 6
 type$ -- 0
-warning$ -- 0
-while$ -- 19
-width$ -- 9
-write$ -- 89
+warning$ -- 12
+while$ -- 44
+width$ -- 19
+write$ -- 176
+(There were 12 warnings)

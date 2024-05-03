@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  1 MAY 2024 00:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  3 MAY 2024 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,7 +392,7 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 (./FrontMatter/acknowledgements.aux) (./FrontMatter/abstract.aux)
 (./Chapters_Engineering/chapter1.aux) (./Chapters_Engineering/chapter2.aux)
 (./Chapters_Engineering/chapter3.aux) (./Chapters_Engineering/chapter4.aux)
-(./Chapters_Engineering/chapter5.aux) (./Appendices/appendixA.aux))
+(./Appendices/appendixA.aux) (./Appendices/appendixB.aux))
 \openout1 = `mmp-report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -487,45 +487,44 @@ al/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}])
 
 
 
-] (./mmp-report.toc)
-\tf@toc=\write4
-\openout4 = `mmp-report.toc'.
-
-
+] (./mmp-report.toc
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.102 \newpage
-               [1
+l.42 ...ine {4}Critical Evaluation}{18}{chapter.4}
+                                                  % [1
 
 
-] (./mmp-report.lof)
-\tf@lof=\write5
-\openout5 = `mmp-report.lof'.
+])
+\tf@toc=\write4
+\openout4 = `mmp-report.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104 \newpage
-               [2] (./mmp-report.lot)
-\tf@lot=\write6
-\openout6 = `mmp-report.lot'.
+l.102 \newpage
+               [2] (./mmp-report.lof)
+\tf@lof=\write5
+\openout5 = `mmp-report.lof'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \newpage
-               [3]
+l.104 \newpage
+               [3] (./mmp-report.lot)
+\tf@lot=\write6
+\openout6 = `mmp-report.lot'.
+
+ [4]
 \openout2 = `Chapters_Engineering/chapter1.aux'.
 
  (./Chapters_Engineering/chapter1.tex
 Chapter 1.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -538,100 +537,64 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[2]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[3]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[4]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[6])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[7]
 \openout2 = `Chapters_Engineering/chapter2.aux'.
 
  (./Chapters_Engineering/chapter2.tex
 Chapter 2.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[2
-
-
-
-
-]
-\openout2 = `Chapters_Engineering/chapter3.aux'.
-
- (./Chapters_Engineering/chapter3.tex
-Chapter 3.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[3
-
-
-
-
-]
-\openout2 = `Chapters_Engineering/chapter4.aux'.
-
- (./Chapters_Engineering/chapter4.tex
-Chapter 4.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[4
-
-
-
-
-]
-\openout2 = `Chapters_Engineering/chapter5.aux'.
-
- (./Chapters_Engineering/chapter5.tex
-Chapter 5.
-)
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
-
-[5
-
-
-
-
-] (./mmp-report.bbl
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 2
-3.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ppl.fd
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)) [6
-
-
-
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [7
-
-]
-\openout2 = `Appendices/appendixA.aux'.
-
-
-(./Appendices/appendixA.tex
-Appendix A.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -643,37 +606,424 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 [8
 
 
-] 
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[10])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[11]
+\openout2 = `Chapters_Engineering/chapter3.aux'.
+
+ (./Chapters_Engineering/chapter3.tex
+Chapter 3.
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[12
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[14]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[16])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[17]
+\openout2 = `Chapters_Engineering/chapter4.aux'.
+
+ (./Chapters_Engineering/chapter4.tex
+Chapter 4.
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[18
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[19]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[20])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[21] (./mmp-report.bbl
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 4
+1.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+) [22
+
+
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}])
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[23] [24
+
+]
+\openout2 = `Appendices/appendixA.aux'.
+
+ (./Appendices/appendixA.tex
+Appendix A.
+)
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[25
+
+
+]
+\openout2 = `Appendices/appendixB.aux'.
+
+ (./Appendices/appendixB.tex
+Appendix B.
+<Pictures/Average Inertia.png, id=528, 642.4pt x 481.8pt>
+File: Pictures/Average Inertia.png Graphic file (type png)
+<use Pictures/Average Inertia.png>
+Package pdftex.def Info: Pictures/Average Inertia.png  used on input line 8.
+(pdftex.def)             Requested size: 341.43436pt x 256.0806pt.
+<Pictures/Average Silhouette Score.png, id=529, 642.4pt x 481.8pt>
+File: Pictures/Average Silhouette Score.png Graphic file (type png)
+<use Pictures/Average Silhouette Score.png>
+Package pdftex.def Info: Pictures/Average Silhouette Score.png  used on input l
+ine 15.
+(pdftex.def)             Requested size: 341.43436pt x 256.0806pt.
+<Pictures/Silhouette score vs Inertia.png, id=530, 1003.75pt x 501.875pt>
+File: Pictures/Silhouette score vs Inertia.png Graphic file (type png)
+<use Pictures/Silhouette score vs Inertia.png>
+Package pdftex.def Info: Pictures/Silhouette score vs Inertia.png  used on inpu
+t line 22.
+(pdftex.def)             Requested size: 213.39566pt x 106.69872pt.
+<Pictures/Use case Diagram.png, id=531, 570.13pt x 382.42876pt>
+File: Pictures/Use case Diagram.png Graphic file (type png)
+<use Pictures/Use case Diagram.png>
+Package pdftex.def Info: Pictures/Use case Diagram.png  used on input line 29.
+(pdftex.def)             Requested size: 170.71393pt x 114.50775pt.
+<Pictures/Program Flowchart.png, id=532, 444.66125pt x 1138.2525pt>
+File: Pictures/Program Flowchart.png Graphic file (type png)
+<use Pictures/Program Flowchart.png>
+Package pdftex.def Info: Pictures/Program Flowchart.png  used on input line 36.
+
+(pdftex.def)             Requested size: 170.71393pt x 436.98674pt.
+
+Underfull \hbox (badness 1147) in paragraph at lines 50--50
+[]\OT1/qhv/m/n/10.95 Users can up-load im-
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 50--50
+\OT1/qhv/m/n/10.95 sys-tem con-firms suc-
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 51--51
+\OT1/qhv/m/n/10.95 up-loaded satel-lite im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]\OT1/qhv/m/n/10.95 All up-loaded im-ages
+ []
+
+
+Underfull \hbox (badness 7869) in paragraph at lines 51--51
+\OT1/qhv/m/n/10.95 are dis-played in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/qhv/m/n/10.95 user dash-board with
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 51--51
+\OT1/qhv/m/n/10.95 op-tions to zoom and
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 52--52
+[]\OT1/qhv/m/n/10.95 Configure clas-si-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 52--52
+[]\OT1/qhv/m/n/10.95 Users should be able
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 52--52
+[]\OT1/qhv/m/n/10.95 Users can se-lect and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\OT1/qhv/m/n/10.95 Start Clas-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]\OT1/qhv/m/n/10.95 Classification pro-cess
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+\OT1/qhv/m/n/10.95 dis-plays pro-cess-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\OT1/qhv/m/n/10.95 View Clas-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 54--54
+[]\OT1/qhv/m/n/10.95 Users should be able
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 54--54
+\OT1/qhv/m/n/10.95 ter maps and met-rics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\OT1/qhv/m/n/10.95 Change De-tec-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 55--55
+[]\OT1/qhv/m/n/10.95 Users should be able
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 55--55
+\OT1/qhv/m/n/10.95 to com-pare clas-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\OT1/qhv/m/n/10.95 comparison in-ter-face
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 55--55
+\OT1/qhv/m/n/10.95 al-lows user to view a
+ []
+
+
+Overfull \hbox (18.36145pt too wide) in paragraph at lines 47--57
+ [][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]\OT1/qhv/m/n/10.95 File Size and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]\OT1/qhv/m/n/10.95 Corrupted File
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]\OT1/qhv/m/n/10.95 Multi-file Up-load
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]\OT1/qhv/m/n/10.95 Upload Lim-its
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[26
+
+
+
+
+ <./Pictures/Average Inertia.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[27 <./Pictures/Average Silhouette Score.png (PNG copy)> <./Pictures/Silhouette
+ score vs Inertia.png (PNG copy)> <./Pictures/Use case Diagram.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[28 <./Pictures/Program Flowchart.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-13.59999pt}.
+
+[29] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./mmp-report.aux (./FrontMatter/cover.aux) (./FrontMatter/declaration.aux)
 (./FrontMatter/acknowledgements.aux) (./FrontMatter/abstract.aux)
 (./Chapters_Engineering/chapter1.aux) (./Chapters_Engineering/chapter2.aux)
 (./Chapters_Engineering/chapter3.aux) (./Chapters_Engineering/chapter4.aux)
-(./Chapters_Engineering/chapter5.aux) (./Appendices/appendixA.aux))
+(./Appendices/appendixA.aux) (./Appendices/appendixB.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `mmp-report.out' has not changed.
-(rerunfilecheck)             Checksum: 105A20D5F90A2ED31BF6EC5A2F4D55C3;1715.
+(rerunfilecheck)             Checksum: 91D87082F14CA3C55808DEFADB6EEFAB;9232.
  ) 
 Here is how much of TeX's memory you used:
- 12603 strings out of 474104
- 204105 string characters out of 5743473
- 1933493 words of memory out of 5000000
- 34682 multiletter control sequences out of 15000+600000
- 590515 words of font info for 65 fonts, out of 8000000 for 9000
+ 12871 strings out of 474104
+ 209864 string characters out of 5743473
+ 1944493 words of memory out of 5000000
+ 34867 multiletter control sequences out of 15000+600000
+ 596389 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,11n,93p,426b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texl
-ive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on mmp-report.pdf (15 pages, 106405 bytes).
+ 85i,12n,93p,703b,586s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2024
+/texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on mmp-report.pdf (37 pages, 376799 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 637 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 490 words of extra memory for PDF output out of 10000 (max. 10000000)
 
