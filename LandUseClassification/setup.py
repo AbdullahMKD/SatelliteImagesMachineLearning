@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name='LandUseClassification',
@@ -9,18 +9,12 @@ setup(
         'matplotlib',
         'Pillow',
         'scikit-learn',
-        'tkinter',
-        'cv2',
-        'math',
+        'opencv-python',
     ],
     entry_points={
         'console_scripts': [
             'run_landuse_classifier=run_app:main',
         ],
-    },
-    include_package_data=True,
-    package_data={
-        'resources': ['*.*'],
     },
     author='Abdullah Durrani',
     author_email='abd15@aber.ac.uk',
