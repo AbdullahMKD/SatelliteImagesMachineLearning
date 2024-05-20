@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  3 MAY 2024 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.23)  3 MAY 2024 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,7 +1020,7 @@ texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/public/tex-gyre/qhvri.pfb></usr/local/texlive/2024/texm
 f-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on mmp-report.pdf (37 pages, 376799 bytes).
+Output written on mmp-report.pdf (37 pages, 376801 bytes).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
  563 compressed objects within 6 object streams
